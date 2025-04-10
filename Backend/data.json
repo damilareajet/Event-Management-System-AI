@@ -1,0 +1,689 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening"],
+            "responses": ["Hello! How can I assist you with your event today?", "Hi there! Need help planning your event?"]
+        },
+        {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later", "Talk to you soon"],
+        "responses": ["Goodbye! Hope your event goes well!", "See you later!"]
+        },
+        {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "Much appreciated"],
+        "responses": ["You're welcome!", "Happy to help!"]
+        },
+        {
+        "tag": "event_types",
+        "patterns": ["What types of events do you manage?", "Can you handle weddings?", "Do you manage corporate events?"],
+        "responses": ["We manage weddings, birthdays, conferences, corporate events, concerts, and more!"]
+        },
+        {
+        "tag": "book_event",
+        "patterns": ["I want to book an event", "Can I schedule an event?", "Help me book an event"],
+        "responses": ["Sure! What kind of event are you planning and what date do you have in mind?"]
+        },
+        {
+        "tag": "event_date",
+        "patterns": ["The event is on May 21", "It's on June 15", "July 10th"],
+        "responses": ["Got it! I’ve noted the date. What type of event is it?"]
+        },
+        {
+        "tag": "event_location",
+        "patterns": ["The location is Lagos", "It's in Abuja", "We'll host it in New York"],
+        "responses": ["Perfect! I've saved the location. What’s the estimated number of guests?"]
+        },
+        {
+        "tag": "number_of_guests",
+        "patterns": ["About 100 guests", "We’re expecting 500 people", "Only 50 attendees"],
+        "responses": ["Thanks! I’ve noted the number of guests. Would you like catering services as well?"]
+        },
+        {
+        "tag": "catering_services",
+        "patterns": ["Yes, we need catering", "Include food and drinks", "No catering needed"],
+        "responses": ["Alright! I’ve added that to your event package. Would you like decorations too?"]
+        },
+        {
+        "tag": "decorations",
+        "patterns": ["Yes, please include decorations", "We want floral décor", "No decorations needed"],
+        "responses": ["Decorations noted. Do you need sound or stage setup?"]
+        },
+        {
+        "tag": "audio_visual",
+        "patterns": ["Yes, we need a stage", "Include speakers and lights", "No sound setup needed"],
+        "responses": ["Audio/Visual setup noted. Do you have a specific theme in mind for the event?"]
+        },
+        {
+        "tag": "event_theme",
+        "patterns": ["It's a tropical theme", "Vintage wedding theme", "No specific theme"],
+        "responses": ["Got it! Your theme has been recorded."]
+        },
+        {
+        "tag": "confirm_booking",
+        "patterns": ["Can you confirm my event?", "Is my event booked?", "Please finalize it"],
+        "responses": ["Your event has been confirmed! We'll follow up with the full plan shortly."]
+        },
+        {
+        "tag": "cancel_event",
+        "patterns": ["Cancel my event", "I want to cancel the booking", "Can I call it off?"],
+        "responses": ["Your event has been canceled. Let us know if you need anything else."]
+        },
+        {
+        "tag": "reschedule_event",
+        "patterns": ["Can I change the date?", "Reschedule the event", "Move it to next week"],
+        "responses": ["Sure, let’s update your event date. What’s the new date?"]
+        },
+        {
+        "tag": "pricing",
+        "patterns": ["How much does it cost?", "What’s your pricing?", "Give me a quote"],
+        "responses": ["Prices vary depending on the event type, services, and guest count. Can you provide more details?"]
+        },
+        {
+        "tag": "discounts",
+        "patterns": ["Do you offer discounts?", "Any promo?", "Is there a deal for large events?"],
+        "responses": ["Yes! We offer discounts for large bookings and early birds. Let me check what applies to you."]
+        },
+        {
+        "tag": "event_packages",
+        "patterns": ["Tell me about your packages", "What are your event plans?", "Do you have an all-inclusive plan?"],
+        "responses": ["We offer Bronze, Silver, and Gold event packages. Which would you like to hear about?"]
+        },
+        {
+        "tag": "contact_info",
+        "patterns": ["How can I reach you?", "Give me your contact", "Phone number or email?"],
+        "responses": ["You can reach us at info@eventmaster.com or call +1234567890."]
+        },
+        {
+        "tag": "services_list",
+        "patterns": ["What services do you offer?", "Tell me what’s included", "List your services"],
+        "responses": ["We provide catering, decoration, venue setup, invitations, event planning, and much more."]
+        },
+        {
+        "tag": "venue_selection",
+        "patterns": ["Can you help me choose a venue?", "I need a location", "Suggest a place"],
+        "responses": ["Absolutely! Do you prefer indoor or outdoor venues? Any city in mind?"]
+        },
+        {
+        "tag": "photography",
+        "patterns": ["Do you offer photography?", "Need a photographer", "Can you include videography?"],
+        "responses": ["Yes, we offer both photography and videography services."]
+        },
+        {
+        "tag": "live_stream",
+        "patterns": ["Can I livestream the event?", "Include virtual attendance", "Add online stream"],
+        "responses": ["Yes, we can set up livestreaming for your event. Would you like it on Zoom or YouTube?"]
+        },
+        {
+        "tag": "event_schedule",
+        "patterns": ["What’s the schedule like?", "Help me plan the timeline", "Event program please"],
+        "responses": ["We’ll work with you to create a perfect schedule. Do you have time slots in mind?"]
+        },
+        {
+        "tag": "music_band",
+        "patterns": ["Include a DJ", "We need a band", "Any music service?"],
+        "responses": ["Yes! We have options for DJs, bands, and traditional music performers."]
+        },
+        {
+        "tag": "invite_design",
+        "patterns": ["Can you design invitations?", "Need digital invites", "Print invitation cards"],
+        "responses": ["Yes, we design both digital and print invitation cards."]
+        },
+        {
+        "tag": "event_followup",
+        "patterns": ["Will you follow up?", "How do I get updates?", "What happens next?"],
+        "responses": ["We'll send regular updates and reminders as the event approaches."]
+        },
+        {
+        "tag": "event_feedback",
+        "patterns": ["How do I give feedback?", "Leave a review", "Rate the service"],
+        "responses": ["We’d love your feedback! You can leave a review on our website or social media."]
+        },
+        {
+        "tag": "event_day_support",
+        "patterns": ["Will someone be there?", "Do you offer on-site coordination?", "Support on event day?"],
+        "responses": ["Yes, our coordinators will be on-site to manage everything."]
+        },
+        {
+        "tag": "event_duration",
+        "patterns": ["How long will the event last?", "Can we book for 5 hours?", "Is it a full-day event?"],
+        "responses": ["We can arrange short or full-day events based on your needs."]
+        },
+        {
+        "tag": "security_services",
+        "patterns": ["Do you provide security?", "We need bouncers", "Include guards"],
+        "responses": ["Yes, security personnel can be arranged based on your event size and location."]
+        },
+        {
+        "tag": "transportation",
+        "patterns": ["Do you offer transport?", "Guests need buses", "Include car rentals"],
+        "responses": ["Yes, we can arrange transportation for guests and logistics."]
+        },
+        {
+        "tag": "event_budget",
+        "patterns": ["I have a limited budget", "Plan within $2000", "Can we do it affordably?"],
+        "responses": ["Of course! Let’s tailor the event to fit your budget."]
+        },
+        {
+        "tag": "language_support",
+        "patterns": ["Can you support French?", "Do you handle multilingual events?", "Include translators"],
+        "responses": ["Yes, we support events in multiple languages including English, French, and more."]
+        },
+        {
+        "tag": "emergency_plan",
+        "patterns": ["What if it rains?", "Emergency plan?", "Backup plan available?"],
+        "responses": ["We always include a backup plan for outdoor events. We’ve got you covered."]
+        },
+        {
+        "tag": "custom_requests",
+        "patterns": ["I want something special", "Custom idea", "Can I add something unique?"],
+        "responses": ["Yes! Tell us your idea and we’ll make it happen."]
+        },
+        {
+        "tag": "event_reminder",
+        "patterns": ["Remind me later", "Set an event reminder", "Notify me closer to date"],
+        "responses": ["We’ll send reminders via email and SMS closer to your event date."]
+        },
+        {
+        "tag": "dress_code",
+        "patterns": ["Suggest dress code", "Formal or casual?", "What should guests wear?"],
+        "responses": ["We can help recommend a dress code based on your event theme."]
+        },
+        {
+        "tag": "guest_list_management",
+        "patterns": ["Manage guest list", "Can you track RSVPs?", "Guest count updates?"],
+        "responses": ["Yes! We offer guest list management and RSVP tracking services."]
+        },
+        {
+        "tag": "event_summary",
+        "patterns": ["Give me a summary", "Review event details", "Show event plan"],
+        "responses": ["Here’s your current event plan summary. Let me know if anything needs to change."]
+        },
+        {
+        "tag": "payment_methods",
+        "patterns": ["How can I pay?", "Do you accept cards?", "Payment options?"],
+        "responses": ["We accept bank transfers, credit/debit cards, and online payments."]
+        },
+        {
+        "tag": "payment_status",
+        "patterns": ["Has payment been made?", "Payment update", "Did my transaction go through?"],
+        "responses": ["Let me check your payment status... Yes, we received it!"]
+        },
+        {
+        "tag": "event_history",
+        "patterns": ["Show my past events", "History of bookings", "Previous event records"],
+        "responses": ["Here’s a summary of your previous events with us."]
+        },
+        {
+        "tag": "help",
+        "patterns": ["I need help", "Can you assist me?", "Support please"],
+        "responses": ["I’m here to help! Tell me what you need assistance with."]
+        },
+        {
+        "tag": "faq",
+        "patterns": ["Frequently asked questions", "What do others ask?", "FAQs?"],
+        "responses": ["Sure! I can answer common questions about bookings, payments, and more."]
+        },
+        {
+            "tag": "about_us",
+            "patterns": ["Tell me about your company", "Who are you?", "What is EventMaster?"],
+            "responses": ["We’re EventMaster – your one-stop solution for professional event planning and execution."]
+        },
+        {
+            "tag": "event_name",
+            "patterns": ["The event is called Gala Night", "Name it Wedding Bliss", "Call it Tech Fest"],
+            "responses": ["Awesome! I've noted the event name."]
+        },
+        {
+            "tag": "event_time",
+            "patterns": ["It starts at 6pm", "The time is 2:00 PM", "Begin at noon"],
+            "responses": ["Noted! I’ve saved the event time."]
+        },
+        {
+            "tag": "early_arrival",
+            "patterns": ["Can we arrive early?", "Early setup possible?", "Can I access the venue earlier?"],
+            "responses": ["Yes, early access is possible. Let us know the time you prefer."]
+        },
+        {
+            "tag": "late_checkout",
+            "patterns": ["Can we leave late?", "Late checkout option?", "Need more time after event"],
+            "responses": ["We can request an extension depending on the venue. We'll confirm that for you."]
+        },
+        {
+            "tag": "event_host",
+            "patterns": ["I need an MC", "Provide an event host", "Hire a compère"],
+            "responses": ["Yes, we can provide professional hosts for your event."]
+        },
+        {
+            "tag": "guest_speakers",
+            "patterns": ["Add guest speakers", "We’ll have speakers", "Include keynote speaker"],
+            "responses": ["Great! Please provide details about your speakers."]
+        },
+        {
+            "tag": "event_invite_tracking",
+            "patterns": ["Track invites", "Send reminders to guests", "Who confirmed attendance?"],
+            "responses": ["Yes, we can track RSVPs and send reminders to guests."]
+        },
+        {
+            "tag": "event_theme_colors",
+            "patterns": ["Use gold and white", "Theme colors are blue and silver", "Red and black theme"],
+            "responses": ["Noted. We’ll design your event with your preferred theme colors."]
+        },
+        {
+            "tag": "virtual_event",
+            "patterns": ["I want a virtual event", "Host online", "Zoom event"],
+            "responses": ["We can host virtual events with full support including streaming, invites, and recording."]
+        },
+        {
+            "tag": "hybrid_event",
+            "patterns": ["Hybrid setup", "Online and in-person", "Both virtual and physical"],
+            "responses": ["We offer hybrid setups. We’ll help you manage both audiences."]
+        },
+        {
+            "tag": "event_merchandise",
+            "patterns": ["Add branded souvenirs", "Giveaway items", "Custom t-shirts"],
+            "responses": ["Sure! We can provide custom event merchandise."]
+        },
+        {
+            "tag": "event_planner_meeting",
+            "patterns": ["I want to meet the planner", "Schedule a planning session", "Talk to the event coordinator"],
+            "responses": ["We’ll schedule a meeting with your dedicated event planner."]
+        },
+        {
+            "tag": "surprise_planning",
+            "patterns": ["It’s a surprise event", "Keep it secret", "Planning a surprise party"],
+            "responses": ["Nice! We’ll keep everything confidential for the surprise."]
+        },
+        {
+            "tag": "after_party",
+            "patterns": ["Plan an after-party", "Include a celebration afterward", "Need a post-event hangout"],
+            "responses": ["Sounds fun! We’ll add an after-party to your event plan."]
+        },
+        {
+            "tag": "event_photos_delivery",
+            "patterns": ["When will I get the photos?", "Photo delivery time?", "How soon for the videos?"],
+            "responses": ["Photos and videos are typically delivered within 3–5 business days."]
+        },
+        {
+            "tag": "event_certificates",
+            "patterns": ["Do you provide certificates?", "Attendee certificates", "Need participation proof"],
+            "responses": ["Yes, we design and distribute attendance certificates."]
+        },
+        {
+            "tag": "weather_check",
+            "patterns": ["Check weather forecast", "What’s the weather like?", "Rain expected?"],
+            "responses": ["We’ll monitor the weather and adjust plans accordingly."]
+        },
+        {
+            "tag": "event_rules",
+            "patterns": ["Any rules to follow?", "Guest restrictions?", "Do’s and don’ts?"],
+            "responses": ["We’ll provide guidelines for guests and vendors to ensure smooth coordination."]
+        },
+        {
+            "tag": "lost_and_found",
+            "patterns": ["Lost item at the event", "Forgot something", "Did you find my phone?"],
+            "responses": ["Please describe the item. We’ll check with the event staff and get back to you."]
+        },
+        {
+            "tag": "vendor_recommendation",
+            "patterns": ["Recommend a caterer", "Know any good photographers?", "Suggest decorators"],
+            "responses": ["We work with top vendors and can match you with the best options."]
+        },
+        {
+            "tag": "venue_capacity",
+            "patterns": ["What’s the venue capacity?", "How many people can it hold?", "Space limit?"],
+            "responses": ["Venue capacity depends on location. Let me fetch the details for you."]
+        },
+        {
+            "tag": "dietary_restrictions",
+            "patterns": ["Vegetarian options?", "Guests with allergies", "Halal or gluten-free?"],
+            "responses": ["We can customize the menu for dietary needs. Please share the requirements."]
+        },
+        {
+            "tag": "children_attending",
+            "patterns": ["Kids will be there", "Need kid-friendly zone", "Children’s entertainment?"],
+            "responses": ["Got it! We can provide a kids’ area and entertainment."]
+        },
+        {
+            "tag": "event_announcements",
+            "patterns": ["Make an announcement", "Add a speech", "Opening remarks"],
+            "responses": ["We’ll schedule announcements and speeches as part of the event timeline."]
+        },
+        {
+            "tag": "event_rehearsal",
+            "patterns": ["Schedule a rehearsal", "Can we do a run-through?", "Practice session?"],
+            "responses": ["Yes! We can organize a rehearsal before the main event."]
+        },
+        {
+            "tag": "emergency_contacts",
+            "patterns": ["Add emergency numbers", "Who do I call in an emergency?", "Backup contacts?"],
+            "responses": ["We'll share emergency contacts with your planning team."]
+        },
+        {
+            "tag": "event_start_reminder",
+            "patterns": ["Remind me before event", "Alert before it starts", "Countdown reminder"],
+            "responses": ["We’ll send you a reminder 1 day and 1 hour before the event."]
+        },
+        {
+            "tag": "event_budget_review",
+            "patterns": ["Review my budget", "How much have I spent?", "Breakdown of charges?"],
+            "responses": ["Here’s your current budget summary. Let us know if you want to make changes."]
+        },
+        {
+            "tag": "event_timeline_update",
+            "patterns": ["Update the schedule", "Change event program", "Edit timeline"],
+            "responses": ["Sure! Let’s go over the changes you’d like to make."]
+        },
+        {
+            "tag": "event_cleanup",
+            "patterns": ["Post-event cleaning?", "Who handles cleanup?", "Tidy up after party"],
+            "responses": ["We handle full event cleanup and trash disposal."]
+        },
+        {
+            "tag": "event_app",
+            "patterns": ["Do you have an app?", "Mobile event management?", "App for planning?"],
+            "responses": ["Yes! You can manage everything through our mobile app."]
+        },
+        {
+            "tag": "event_insurance",
+            "patterns": ["Is the event insured?", "Add insurance", "Coverage included?"],
+            "responses": ["We offer insurance options depending on the type of event."]
+        },
+        {
+            "tag": "event_postponement",
+            "patterns": ["Can I postpone?", "Delay the event", "Move it to a new date"],
+            "responses": ["Yes, events can be postponed. Let us know your new preferred date."]
+        },
+        {
+            "tag": "event_theme_music",
+            "patterns": ["Play soft music", "Use jazz playlist", "Party beats"],
+            "responses": ["Noted! We’ll curate music to match your theme."]
+        },
+        {
+            "tag": "event_checklist",
+            "patterns": ["What’s left to do?", "Checklist please", "Any pending items?"],
+            "responses": ["Here’s your current checklist. Let’s complete it together."]
+        },
+        {
+            "tag": "event_livestream_recording",
+            "patterns": ["Will it be recorded?", "Save the livestream", "Watch replay"],
+            "responses": ["Yes! We’ll record the livestream and share the replay link."]
+        },
+        {
+            "tag": "vip_arrangement",
+            "patterns": ["Add VIP seating", "Special guests coming", "VIP protocol?"],
+            "responses": ["We can make special arrangements for VIP guests."]
+        },
+        {
+            "tag": "gift_collection",
+            "patterns": ["Where will gifts go?", "Collect presents", "Gift table?"],
+            "responses": ["We’ll set up a gift collection area and monitor it securely."]
+        },
+        {
+            "tag": "final_confirmation",
+            "patterns": ["Confirm everything", "Is the event ready?", "Final check"],
+            "responses": ["Everything is confirmed! Looking forward to making your event a success."]
+        },
+        {
+            "tag": "guest_transport",
+            "patterns": ["Pick up guests", "Shuttle buses?", "Guest logistics"],
+            "responses": ["We can organize transportation for guests from hotels or key locations."]
+        },
+        {
+            "tag": "event_tips",
+            "patterns": ["Any planning tips?", "How to make it better?", "Suggestions?"],
+            "responses": ["Absolutely! Keep your timeline flexible and have a backup plan."]
+        },
+        {
+            "tag": "event_start_time_change",
+            "patterns": ["Change start time", "Move event earlier", "Start later"],
+            "responses": ["Okay! What’s the new start time?"]
+        },
+        {
+            "tag": "event_end_time_change",
+            "patterns": ["Change end time", "Extend the event", "End earlier"],
+            "responses": ["Got it! I’ll adjust the schedule accordingly."]
+        },
+        {
+            "tag": "host_script",
+            "patterns": ["Do you write MC scripts?", "Help with program guide", "Script for host?"],
+            "responses": ["Yes, we provide professional scripts and agenda outlines for your host."]
+        },
+        {
+            "tag": "event_anniversary",
+            "patterns": ["Plan my anniversary", "Wedding anniversary party", "Silver jubilee"],
+            "responses": ["Absolutely! Let’s make your anniversary celebration memorable."]
+        },
+        {
+            "tag": "event_graduation",
+            "patterns": ["Plan a graduation party", "Graduation celebration", "Convocation dinner"],
+            "responses": ["Congrats! We’ll help you organize an amazing graduation event."]
+        },
+        {
+            "tag": "event_awards",
+            "patterns": ["Award ceremony", "Host an awards night", "Plan a recognition event"],
+            "responses": ["Got it! Award ceremonies are our specialty. Let’s make it classy."]
+        },
+        {
+            "tag": "event_church",
+            "patterns": ["Church program", "Religious event", "Plan church anniversary"],
+            "responses": ["We respect all faiths and can help organize your church event with care."]
+        },
+        {
+            "tag": "event_conference",
+            "patterns": ["Tech conference", "Academic conference", "Organize a seminar"],
+            "responses": ["Let’s set up a well-structured conference with all necessary logistics."]
+        },
+        {
+            "tag": "event_meeting",
+            "patterns": ["Corporate meeting", "Board meeting", "Business strategy session"],
+            "responses": ["We'll handle your professional meetings with privacy and precision."]
+        },
+        {
+            "tag": "event_training",
+            "patterns": ["Organize a workshop", "Training session", "Skills training"],
+            "responses": ["Great! We'll set up an interactive and well-equipped training session."]
+        },
+        {
+            "tag": "event_reunion",
+            "patterns": ["Family reunion", "School reunion", "Alumni meetup"],
+            "responses": ["Reunions are beautiful! We’ll plan a heartwarming experience."]
+        },
+        {
+            "tag": "event_charity",
+            "patterns": ["Charity event", "Fundraiser", "Organize donation drive"],
+            "responses": ["Amazing cause! We’ll support the logistics of your charity event."]
+        },
+        {
+            "tag": "event_product_launch",
+            "patterns": ["Launch a product", "Product unveiling", "Business launch party"],
+            "responses": ["Product launches should be impactful! We’ll create a memorable experience."]
+        },
+        {
+            "tag": "event_branding",
+            "patterns": ["Add my logo", "Custom branding", "Include brand colors"],
+            "responses": ["Sure! Your brand will be visible across all event materials."]
+        },
+        {
+            "tag": "event_story",
+            "patterns": ["Tell our love story", "Document our journey", "Play a slideshow"],
+            "responses": ["Beautiful! We’ll create a story reel or slideshow for your event."]
+        },
+        {
+            "tag": "social_media",
+            "patterns": ["Promote on Instagram", "Create a hashtag", "Post on Facebook"],
+            "responses": ["We’ll handle social media promotion and hashtag campaigns."]
+        },
+        {
+            "tag": "event_hashtag",
+            "patterns": ["Create a hashtag", "Hashtag ideas?", "Unique hashtag for event"],
+            "responses": ["Here are some unique hashtag suggestions for your event."]
+        },
+        {
+            "tag": "event_social_wall",
+            "patterns": ["Live tweet wall", "Instagram feed at event", "Social media screen"],
+            "responses": ["We can set up a live social wall to display guest posts in real time."]
+        },
+        {
+            "tag": "event_countdown",
+            "patterns": ["Countdown to my event", "How many days left?", "Show event countdown"],
+            "responses": ["Your event is just around the corner! Here’s your countdown timer."]
+        },
+        {
+            "tag": "guest_list_limit",
+            "patterns": ["Limit guest count", "Only 50 guests", "Max attendees"],
+            "responses": ["Guest count noted. We’ll stick to your attendance limit."]
+        },
+        {
+            "tag": "event_design_mockup",
+            "patterns": ["Can I see a mockup?", "Preview the design", "Event layout sample?"],
+            "responses": ["Sure! We’ll send you a visual mockup before finalizing designs."]
+        },
+        {
+            "tag": "event_virtual_tickets",
+            "patterns": ["E-ticket system", "Online tickets", "QR entry"],
+            "responses": ["We offer virtual ticketing and QR-based check-in options."]
+        },
+        {
+            "tag": "event_music_genre",
+            "patterns": ["Play Afrobeats", "Only gospel music", "Hip-hop and R&B"],
+            "responses": ["Music preference saved! The playlist will match your style."]
+        },
+        {
+            "tag": "event_eco_friendly",
+            "patterns": ["Make it eco-friendly", "No plastic please", "Sustainable event"],
+            "responses": ["We love green events! We’ll minimize waste and go eco-conscious."]
+        },
+        {
+            "tag": "event_translation",
+            "patterns": ["Add sign language", "Translate speeches", "Multi-language support"],
+            "responses": ["We can include interpreters or translated materials as needed."]
+        },
+        {
+            "tag": "event_custom_backdrop",
+            "patterns": ["Custom event banner", "Photo backdrop", "Stage background"],
+            "responses": ["Noted! We’ll design a stunning backdrop for your event."]
+        },
+        {
+            "tag": "event_dance_floor",
+            "patterns": ["Setup a dance floor", "Dance area", "Party dance zone"],
+            "responses": ["Let’s bring the energy! Dance floor is added to your plan."]
+        },
+        {
+            "tag": "event_red_carpet",
+            "patterns": ["Roll out red carpet", "VIP entrance", "Hollywood style entrance"],
+            "responses": ["Red carpet vibes activated! We’ll add it to your setup."]
+        },
+        {
+            "tag": "event_recommend_theme",
+            "patterns": ["Suggest a theme", "What theme suits me?", "Theme ideas?"],
+            "responses": ["Here are some amazing event themes you can choose from."]
+        },
+        {
+            "tag": "event_dress_code",
+            "patterns": ["Dress code is white", "All guests wear black", "Traditional attire only"],
+            "responses": ["Dress code saved! We’ll include it in invites."]
+        },
+        {
+            "tag": "event_cultural_elements",
+            "patterns": ["Add traditional dance", "Cultural food only", "Native drumming"],
+            "responses": ["Love that! We’ll highlight your cultural heritage beautifully."]
+        },
+        {
+            "tag": "event_flash_mob",
+            "patterns": ["Plan a flash mob", "Surprise dance performance", "Pop-up act"],
+            "responses": ["Cool idea! Let’s coordinate a show-stopping flash mob."]
+        },
+        {
+            "tag": "event_security_check",
+            "patterns": ["Strict security please", "Guest ID check", "Screening at entrance"],
+            "responses": ["We’ll arrange thorough security checks for your event."]
+        },
+        {
+            "tag": "event_fog_machine",
+            "patterns": ["Add fog effect", "Smoke machine", "Stage fog"],
+            "responses": ["Atmosphere is everything! Fog machine included."]
+        },
+        {
+            "tag": "event_led_wall",
+            "patterns": ["LED screen display", "Big screen at stage", "Digital display wall"],
+            "responses": ["We can set up an LED wall for visuals and media."]
+        },
+        {
+            "tag": "event_fashion_show",
+            "patterns": ["Organize a fashion show", "Runway setup", "Designer showcase"],
+            "responses": ["Fabulous! We’ll plan a full fashion runway experience."]
+        },
+        {
+            "tag": "event_fireworks",
+            "patterns": ["Add fireworks", "Grand finale show", "Sparkle at night"],
+            "responses": ["We can schedule fireworks with safety measures in place."]
+        },
+        {
+            "tag": "event_jingles",
+            "patterns": ["Create an event jingle", "Custom sound for event", "Theme song"],
+            "responses": ["Nice touch! Let’s make your event jingle unforgettable."]
+        },
+        {
+            "tag": "event_feedback",
+            "patterns": ["Send feedback forms", "Collect guest reviews", "How was the event?"],
+            "responses": ["We’ll collect post-event feedback to improve future experiences."]
+        },
+        {
+            "tag": "event_certified_vendor",
+            "patterns": ["Only certified vendors", "Registered professionals only", "Licensed services"],
+            "responses": ["Got it! We work only with certified and trusted vendors."]
+        },
+        {
+            "tag": "event_logo_on_materials",
+            "patterns": ["Add logo to everything", "Brand all materials", "Put logo on stage"],
+            "responses": ["Your logo will be consistently used across all event assets."]
+        },
+        {
+            "tag": "event_documentation",
+            "patterns": ["Full event coverage", "Document everything", "Record and archive"],
+            "responses": ["We offer comprehensive documentation—photo, video, and reports."]
+        },
+        {
+            "tag": "event_celebrity_invite",
+            "patterns": ["Invite a celebrity", "Special guest appearance", "Public figure"],
+            "responses": ["We’ll reach out to the celebrity or agent for availability and pricing."]
+        },
+        {
+            "tag": "event_recommendations",
+            "patterns": ["Any trending ideas?", "What’s popular this year?", "Latest event trends?"],
+            "responses": ["Here are trending event ideas you might love!"]
+        },
+        {
+            "tag": "event_tiktok_booth",
+            "patterns": ["Add TikTok booth", "Short video station", "Selfie zone"],
+            "responses": ["Fun idea! TikTok booth added to your plan."]
+        },
+        {
+            "tag": "event_pre_wedding_shoot",
+            "patterns": ["Plan a pre-wedding shoot", "Engagement shoot", "Save the date video"],
+            "responses": ["Let’s schedule a stunning pre-wedding shoot."]
+        },
+        {
+            "tag": "event_digital_invite",
+            "patterns": ["Create digital invites", "E-invitations", "WhatsApp invitation"],
+            "responses": ["Digital invites created! Let us know the guest list."]
+        },
+        {
+            "tag": "event_gift_bags",
+            "patterns": ["Give guests gift bags", "Customized party packs", "Souvenir bags"],
+            "responses": ["We’ll prepare personalized gift bags for your guests."]
+        },
+        {
+            "tag": "event_custom_fabric",
+            "patterns": ["Custom Ankara fabric", "Event uniform cloth", "Special print"],
+            "responses": ["Custom fabric design? Absolutely! Let’s begin production."]
+        },
+        {
+            "tag": "event_guest_list_management",
+            "patterns": ["Manage RSVPs", "Track who’s coming", "Send guest list reminders"],
+            "responses": ["Guest list management is covered. We’ll handle invites, tracking, and follow-ups."]
+        }
+    ]
+}
